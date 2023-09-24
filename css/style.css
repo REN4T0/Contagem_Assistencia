@@ -1,0 +1,146 @@
+*{
+    padding: none;
+    margin: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilização por TAG */
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Estilização por CLASS */
+/* Botões de confirmar */
+.confirm{
+    background-color: green;
+    color: #fff;
+}
+
+.assento{
+    width: 1.5rem;
+    height: 1.5rem;
+    cursor: pointer;
+}
+
+/* Estilizaçõa por ID */
+#cabecalho{
+    display: none;
+}
+
+#main_title{
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#alterCongr{
+    display: block;
+    margin: auto;
+    background-color: rgb(255, 185, 54);
+}
+
+#rowSelectAll{
+    width: 29rem;
+    align-items: flex-start;
+
+    /* justify-content: center; */
+    margin-bottom: 5px;
+}
+
+#selectAll{
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+
+    margin-bottom: 0;
+}
+
+#setor_assento{
+    width: 100%;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    align-items: center;
+}
+
+#mostrar_assentos{
+    background-color: rgba(0, 0, 0, 0.399);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#assento133{
+    margin-left: 7.9rem;
+}
+
+
+
+/* Botão que dá prosseguimento para o restante da contagem da assistencia */
+#btn_info{
+    display: none;
+    margin: auto;
+}
+
+/* Interações */
+button:hover{
+    opacity: 75%;
+}
+
+/* Responsividade */
+@media(max-width: 480px){
+    .assento{
+        width: 1rem;
+        height: 1rem;
+    }
+
+    #rowSelectAll{
+        width: 23rem;
+    }
+
+    #assento133{
+        margin-left: 6.4rem;
+    }
+}
+
+@media(max-width: 385px){
+    .assento{
+        width: 12px;
+        height: 12px;
+        margin: 0;
+    }
+
+    #rowSelectAll{
+        width: 15rem;
+    }
+
+    #assento133{
+        margin-left: 4.3rem;
+    }
+}
+
+@media(max-width: 260px){
+    .assento{
+        width: 8px;
+        height: 8px;
+    }
+
+    #rowSelectAll{
+        width: 12rem;
+    }
+
+    #assento133{
+        margin-left: 3.5rem;
+    }
+}
+
+@media(max-width: 245px){
+    #main_title{
+        font-size: 1.5rem;
+    }
+}

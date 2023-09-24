@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <title>Assistência</title>
+</head>
+<body>
+    <!-- Seção do modal -->
+    <section>
+        <div id="fundo">
+            <div id="modal">
+                <div id="content">
+                    <h1 id="modal_title">contagem da assistência</h1>
+                    <label id="congrLabel" for="qtd_assento">Informe a congregação</label><br>
+            
+                    <select name="congregacao" id="congregacao">
+                        <option value="" selected hidden disabled>Selecione a congregação</option>
+                        <option value="Parque-Brasil">Parque Brasil</option>
+                        <option value="Parque-Brasil(Celebracao)">Parque Brasil (Celebração)</option>
+                    </select><br>
+            
+                    <button class="confirm" id="confirmCongr" onclick="gerarAssentos()">Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header id="cabecalho">
+        <button id="alterCongr" onclick="seeModal()">alterar congregação</button>
+        <h1 id="main_title">selecione os assentos</h1><br>
+    </header>
+
+    <!-- Seção onde irá aparecer os assentos -->
+    <main id="setor_assento">
+        <div id="rowSelectAll">
+            <input type="checkbox" name="selectAll" id="selectAll" onchange="selectAll()">
+            <label id="selectAllLabel" for="selectAll">Selecionar tudo</label>
+        </div>
+        
+        <div id="mostrar_assentos"></div>
+    </main>
+    
+    <button class="confirm" id="btn_info" onclick="addInfo()">Concluir</button>
+</body>
+</html>
